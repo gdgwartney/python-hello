@@ -1,1 +1,31 @@
+# Python Hello - Project Dependencies
+# =====================================
+# This file specifies all external packages required to run the python-hello project.
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# To update dependencies:
+#   pip list --outdated
+#   pip install --upgrade <package-name>
+#
+# Best Practices:
+#   - Pin exact versions for reproducible builds (==)
+#   - Use version ranges for flexibility (>=X.Y,<Z.0)
+#   - Document why each dependency is needed
+#   - Keep this file updated with actual project requirements
+
+# ============================================================================
+# Core Dependencies
+# ============================================================================
+
+# Pyramid Web Framework (v2.0)
+# ------------------------------
+# A mature, flexible Python web framework for building HTTP applications.
+# Used in server.py to:
+#   - Configure routing for the root endpoint
+#   - Handle HTTP requests and responses
+#   - Serve the greeting web application
+#
+# Docs: https://docs.pylonsproject.org/projects/pyramid/
 pyramid==2.0
