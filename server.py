@@ -55,7 +55,7 @@ def hello_world(request):
 
 if __name__ == '__main__':
     # Read server port from environment variable, defaulting to 8001
-    port = int(os.environ.get("PORT", 8001))
+    port = int(os.environ.get("PORT"))
 
     # Configure the Pyramid application
     with Configurator() as config:
