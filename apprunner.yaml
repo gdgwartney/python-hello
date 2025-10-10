@@ -8,3 +8,8 @@ run:
   command: python3 server.py
   network:
     port: 8080
+  env:
+    - name: PORT
+      value: "8080"
+    - name: NAME
+      value: "world"
