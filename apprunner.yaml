@@ -3,11 +3,8 @@ runtime: python311
 build:
   commands:
     build:
-      - echo "Build stage - dependencies will be installed in pre-run"
+      - pip3 install -r requirements.txt
 run:
-  runtime-version: 3.11
-  pre-run:
-    - pip3 install -r requirements.txt
-  command: python server.py
+  command: python3 server.py
   network:
     port: 8080
